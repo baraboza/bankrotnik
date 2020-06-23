@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="header__top-container container">
+				<p class="header__address">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.86432 0.492188C4.98938 0.492188 2.65039 2.83118 2.65039 5.70611C2.65039 9.31961 7.86945 15.4922 7.86945 15.4922C7.86945 15.4922 13.0782 9.14191 13.0782 5.70611C13.0782 2.83118 10.7393 0.492188 7.86432 0.492188ZM9.43747 7.23276C9.00369 7.66644 8.43405 7.88333 7.86432 7.88333C7.29468 7.88333 6.72485 7.66644 6.29126 7.23276C5.4238 6.36539 5.4238 4.95401 6.29126 4.08655C6.7113 3.66632 7.27005 3.43488 7.86432 3.43488C8.45859 3.43488 9.01724 3.66641 9.43747 4.08655C10.3049 4.95401 10.3049 6.36539 9.43747 7.23276Z" fill="white"/>
+					</svg>
+					<span>Головной офис: г. Ростов-На-Дону, пер. Газетный, 47 Б, офис 212</span>
+				</p>
+				<p class="header__time">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 0C3.58862 0 0 3.58862 0 8C0 12.4114 3.58862 16 8 16C12.4114 16 16 12.4114 16 8C16 3.58862 12.4114 0 8 0ZM11.8047 12.1379C11.6747 12.2679 11.504 12.3334 11.3334 12.3334C11.1627 12.3334 10.9919 12.2679 10.8621 12.1379L7.52869 8.80469C7.40332 8.68005 7.33337 8.51062 7.33337 8.33337V4C7.33337 3.63135 7.63196 3.33337 8 3.33337C8.36804 3.33337 8.66663 3.63135 8.66663 4V8.05737L11.8047 11.1953C12.0653 11.4561 12.0653 11.8773 11.8047 12.1379V12.1379Z" fill="white"/>
+					</svg>
+					<span>Работаем: пн-пт 10:00-19:00, сб 10:00-14:00</span>
+				</p>
+				<ul class="header__social-list">
+					<li class="header__social-item">
+						<a href="#" target="_blank" rel="nofollow">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.33333 4.96962C1.33333 2.96131 2.96138 1.33325 4.96969 1.33325H11.0303C13.0386 1.33325 14.6667 2.96131 14.6667 4.96962V11.0302C14.6667 13.0385 13.0386 14.6666 11.0303 14.6666H4.96969C2.96138 14.6666 1.33333 13.0385 1.33333 11.0302V4.96962ZM8 9.8181C9.00418 9.8181 9.81818 9.0041 9.81818 7.99992C9.81818 6.99577 9.00418 6.18174 8 6.18174C6.99584 6.18174 6.18181 6.99577 6.18181 7.99992C6.18181 9.0041 6.99584 9.8181 8 9.8181ZM8 11.0302C9.67357 11.0302 11.0303 9.67349 11.0303 7.99992C11.0303 6.32633 9.67357 4.96962 8 4.96962C6.32641 4.96962 4.96969 6.32633 4.96969 7.99992C4.96969 9.67349 6.32641 11.0302 8 11.0302ZM11.3333 3.75749C11.8354 3.75749 12.2424 4.16451 12.2424 4.66659C12.2424 5.16866 11.8354 5.57568 11.3333 5.57568C10.8313 5.57568 10.4242 5.16866 10.4242 4.66659C10.4242 4.16451 10.8313 3.75749 11.3333 3.75749Z" fill="white"/>
+							</svg>
+						</a>
+					</li>
+					<li class="header__social-item">
+						<a href="#" target="_blank" rel="nofollow">
+							<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2974 9.44757C14.1167 9.27784 13.9359 9.10815 13.7616 8.93525C13.2967 8.47411 13.2676 8.21473 13.6454 7.66712C14.0521 7.09073 14.4879 6.51431 14.9238 5.93792C14.9501 5.90252 14.9764 5.86724 15.0026 5.83204C15.3823 5.32263 15.7504 4.82867 15.9407 4.20867C16.086 3.80519 15.9697 3.63225 15.5339 3.54581H15.3014H12.7737C12.4832 3.54581 12.3089 3.66109 12.1926 3.94928C12.1209 4.10345 12.0541 4.25761 11.9882 4.40978C11.8938 4.62742 11.8013 4.84093 11.6987 5.04447C11.292 5.85145 10.8561 6.62959 10.217 7.29248C10.1978 7.31149 10.1786 7.33151 10.1592 7.35172C10.0318 7.48479 9.89574 7.62691 9.69395 7.55185C9.40339 7.43656 9.31622 6.97545 9.31622 6.80252V3.89165C9.25811 3.45935 9.17101 3.28642 8.76422 3.19995H6.12026C5.77161 3.19995 5.56823 3.31523 5.39391 3.54581C5.27769 3.68991 5.24863 3.77637 5.48107 3.80519C5.91689 3.89165 6.17837 4.17986 6.23648 4.61216C6.32365 5.30387 6.32365 5.99554 6.26554 6.68724C6.23648 6.88899 6.20742 7.09073 6.12026 7.29248C5.97499 7.58069 5.77161 7.63831 5.51012 7.4654C5.27769 7.29248 5.10336 7.06192 4.92904 6.83134C4.28984 5.93792 3.79591 4.98684 3.38915 3.97811C3.27293 3.68991 3.06955 3.51698 2.74995 3.51698C2.49814 3.51698 2.24634 3.51378 1.99453 3.51059C1.49093 3.50418 0.987315 3.49777 0.483712 3.51698C0.0188404 3.51698 -0.0973868 3.74756 0.0769479 4.15102C0.919526 5.96673 1.84927 7.75359 3.0405 9.36757C3.65064 10.2033 4.377 10.9239 5.27769 11.4426C6.32365 12.0479 7.42771 12.2208 8.61894 12.1631C9.17101 12.1343 9.34528 11.9902 9.37433 11.4426C9.37433 11.0679 9.43245 10.7221 9.60678 10.3763C9.81017 10.0593 10.0717 10.0016 10.3913 10.2033C10.5366 10.3186 10.6818 10.4339 10.798 10.578C10.9087 10.6978 11.0159 10.8175 11.122 10.9361C11.3224 11.1599 11.5188 11.3795 11.7277 11.5867C12.1345 11.9902 12.5994 12.2496 13.2095 12.1919H15.5339C15.9116 12.1631 16.0859 11.702 15.8826 11.2985C15.7373 11.0103 15.5339 10.7509 15.3305 10.4915C15.0206 10.1265 14.659 9.78702 14.2974 9.44757Z" fill="white"/>
+								</g>
+								<defs>
+									<clipPath id="clip0">
+										<rect width="16.64" height="16" fill="white"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header__main">
+			<div class="header__main-container container">
+				<a href="#" class="header__logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<p class="header__title">
+					Центр списания долгов физ. лицам <br>
+					в Ростове-на-Дону, Краснодаре <br>
+					и Москве
+				</p>
+				<a href="tel:+78632261777" rel="nofollow" class="header__tel">
+					<span class="header__tel-icon"><i class="fas fa-phone"></i></span>
+					<span class="header__tel-text">8 863 226-17-77</span>
+				</a>
+				<a href="#modal" class="header__request-call js-modal-open">Позвоните мне</a>
+				<div class="header__toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<nav class="header__nav">
+				<div class="header__nav-container container">
+					<ul class="menu">
+						<li class="menu-item"><a href="#about" class="js-scroll-link">О нас</a></li>
+						<li class="menu-item"><a href="#whom-help" class="js-scroll-link">Кому помогаем</a></li>
+						<li class="menu-item"><a href="#tariffs" class="js-scroll-link">Тарифы</a></li>
+						<li class="menu-item"><a href="#works" class="js-scroll-link">Наши работы</a></li>
+						<li class="menu-item"><a href="#result" class="js-scroll-link">Результаты работы</a></li>
+						<li class="menu-item"><a href="#steps" class="js-scroll-link">Как мы работаем?</a></li>
+						<li class="menu-item"><a href="#team" class="js-scroll-link">Команда</a></li>
+						<li class="menu-item"><a href="#faq" class="js-scroll-link">Вопрос-ответ</a></li>
+						<li class="menu-item"><a href="#contacts" class="js-scroll-link">Филиалы и контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+	</header>
+
+	<main>
+		<section class="init">
+			<div class="container">
+				<div class="init__card">
+					<div class="init__card-container">
+						<p class="init__card-title">Избавим от долгов законно и без последствий от 6 до 12 месяцев </p>
+						<p class="init__card-desc">с гарантией 100% возврата денег, если суд не спишет долг в полном объеме</p>
+						<div class="init__card-button-wrap">
+							<a href="#result" class="init__card-button button js-scroll-link">Рассчитать стоимость</a>
+							<p class="init__card-button-label">Расчитаем стоимость банкротства бесплатно за 3 минуты</p>
+						</div>
+						<p class="init__card-director">Хачиков Каспар - руководитель "Банкротник", имеет 17 летний опыт в Антикризисном управлении</p>
+						<div class="init__card-video">
+							<p class="init__card-video-label">Видео о том, как законно на основании № 127-ФЗ списать долги и сохранить свое имущество</p>
+							<a href="http://www.youtube.com/watch?v=opj24KnzrWo" class="init__card-video-link fancybox-media">
+								<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="29" cy="29" r="27" stroke="white" stroke-width="4"/>
+									<path d="M42 29L24 39.3923L24 18.6077L42 29Z" fill="white"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<ul class="init__list row">
+					<li class="init__item col-sm-6 col-xl-3">
+						<div class="init__item-box" style="background-image: url(img/room-key.svg);">
+							<p class="init__item-text">
+								Работаем «под ключ» <br>
+								от сбора документов <br>
+								до решения суда<br>
+								с сохранением полной конфиденциальности
+							</p>
+						</div>
+					</li>
+					<li class="init__item col-sm-6 col-xl-3">
+						<div class="init__item-box" style="background-image: url(img/call-center-agent.svg);">
+							<p class="init__item-text">
+								Предоставим персонального менеджера-юриста <br>
+								с опытом более 5 лет <br>
+								на весь период работы
+							</p>
+							<a href="#team" class="init__item-link js-scroll-link">Смотреть всю команду</a>
+						</div>
+					</li>
+					<li class="init__item col-sm-6 col-xl-3">
+						<div class="init__item-box" style="background-image: url(img/mace.svg);">
+							<p class="init__item-text">
+								100% завершенных дел <br>
+								с положительным решением
+							</p>
+							<a href="#works" class="init__item-link js-scroll-link">Смотреть решения суда</a>
+						</div>
+					</li>
+					<li class="init__item col-sm-6 col-xl-3">
+						<div class="init__item-box" style="background-image: url(img/gift.svg);">
+							<p class="init__item-text">Поездка в такси, услуги нотариуса, госпошлина за наш счет</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="problems container">
+			<p class="problems__title txt-title-1">Расскажите нам, Что Вас беспокоит</p>
+			<p class="problems__subtitle">мы вместе найдем решение</p>
+			<ol class="problems__list row">
+				<li class="problems__item col-lg-6">
+					<div class="problems__item-box">
+						<span class="problems__number">1</span>
+						<p class="problems__item-text">Приходят судебные приставы, коллекторы, звонят вашим родственникам и знакомым. </p>
+					</div>
+				</li>
+				<li class="problems__item col-lg-6">
+					<div class="problems__item-box">
+						<span class="problems__number">2</span>
+						<p class="problems__item-text">Вы не можете выезжать за границу. </p>
+					</div>
+				</li>
+				<li class="problems__item col-lg-6">
+					<div class="problems__item-box">
+						<span class="problems__number">3</span>
+						<p class="problems__item-text">У вас списывают автоматически<br> деньги с карты. </p>
+					</div>
+				</li>
+				<li class="problems__item col-lg-6">
+					<div class="problems__item-box">
+						<span class="problems__number">4</span>
+						<p class="problems__item-text">Теряете много денег за счет<br> штрафов, пеней</p>
+					</div>
+				</li>
+			</ol>
+			<div class="problems__bottom-row row">
+				<p class="problems__bottom-text col-lg-8 col-xl-6"><b>100% списание долгов</b> с сохранением имущества без посещения судов, подготовки документов со <b>100% сохранением</b> Вашего <b>времени и нервов</b></p>
+				<div class="problems__form-wrap col-lg-8 col-xl-6">
+					<form class="problems__form">
+						<span class="problems__form-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9794 15.9778C11.0423 20.9157 5.50685 22.2579 4.56285 21.8032L2.14577 19.0253C2.14657 19.0227 2.14737 19.02 2.14844 19.0173L5.62765 16.2613L6.56339 17.668C6.58179 17.6957 6.60152 17.7227 6.62232 17.7483C6.93886 18.1395 7.40552 18.3704 7.93619 18.3981C8.45353 18.4259 10.0253 18.508 14.2674 14.265C15.3165 13.2157 18.509 10.0226 18.3994 7.93382C18.3714 7.40262 18.1408 6.93595 17.7498 6.61915C17.724 6.59808 17.6973 6.57862 17.6696 6.56022L16.2626 5.62395L19.0184 2.145C19.0213 2.14394 19.0242 2.14287 19.0274 2.1418L21.8037 4.55941C22.2584 5.50395 20.9168 11.0392 15.9794 15.9778M23.3298 3.06287C23.3125 3.04554 23.2944 3.02874 23.276 3.01274L20.4101 0.516995C20.016 0.14206 19.4594 -0.0430068 18.8762 0.00845998C18.3562 0.0537935 17.8533 0.284994 17.4962 0.642329C17.4674 0.671395 17.4402 0.701795 17.4149 0.733796L14.5997 4.28767C13.8647 5.07754 13.8815 6.31861 14.6498 7.08795C14.6999 7.13808 14.7549 7.18288 14.8135 7.22208L16.253 8.18022C16.1386 8.67915 15.3874 10.1272 12.7591 12.7562C10.1306 15.3853 8.68232 16.1368 8.18339 16.2514L7.22579 14.812C7.18659 14.753 7.14179 14.6981 7.09165 14.6482C6.32232 13.8792 5.08125 13.8624 4.29164 14.5978L0.738034 17.4128C0.705501 17.4386 0.674834 17.4661 0.6455 17.4954C-0.165969 18.3085 -0.218236 19.6317 0.522033 20.4093L3.01671 23.2757C3.03271 23.2944 3.04951 23.3125 3.06684 23.3299C3.55964 23.8227 4.29884 24 5.10845 24C6.57058 24 8.26152 23.4208 9.14046 23.0752C10.8394 22.4067 14.1829 20.7917 17.4877 17.4864C19.937 15.0365 21.9216 12.0714 23.0754 9.13755C23.6125 7.77195 24.7128 4.44607 23.3298 3.06287" fill="black"/>
+							</svg>
+						</span>
+						<input type="tel" class="problems__form-input" placeholder="Ваш телефон">
+						<input type="submit" class="problems__form-button button" value="Подать на банкротство">
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="whom-help" class="whom-help container">
+			<p class="whom-help__title txt-title-1">Окажем высококвалифицированную помощь, если у Вас:</p>
+			<ul class="whom-help__list row">
+				<li class="whom-help__item col-md-6 col-lg-4">
+					<div class="whom-help__icon">
+						<img src="img/1.svg" alt="">
+					</div>
+					<p class="whom-help__text">Займы по кредитам, кредитным картам, в микрофинансовых организациях</p>
+				</li>
+				<li class="whom-help__item col-md-6 col-lg-4">
+					<div class="whom-help__icon">
+						<img src="img/2.svg" alt="">
+					</div>
+					<p class="whom-help__text">Задолженность по налогам, штрафам, пеням</p>
+				</li>
+				<li class="whom-help__item col-md-6 col-lg-4">
+					<div class="whom-help__icon">
+						<img src="img/3.svg" alt="">
+					</div>
+					<p class="whom-help__text">Займы по распискам<br> у физических лиц</p>
+				</li>
+				<li class="whom-help__item col-md-6 col-lg-4">
+					<div class="whom-help__icon">
+						<img src="img/4.svg" alt="">
+					</div>
+					<p class="whom-help__text">Автокредиты</p>
+				</li>
+				<li class="whom-help__item col-md-6 col-lg-4">
+					<div class="whom-help__icon">
+						<img src="img/5.svg" alt="">
+					</div>
+					<p class="whom-help__text">Долги за коммунальные<br> услуги</p>
+				</li>
+				<li class="whom-help__item col-md-6 col-lg-4">
+					<div class="whom-help__icon">
+						<img src="img/6.svg" alt="">
+					</div>
+					<p class="whom-help__text">Банковские займы</p>
+				</li>
+				<li class="whom-help__item col-md-6 col-lg-4">
+					<div class="whom-help__icon">
+						<img src="img/7.svg" alt="">
+					</div>
+					<p class="whom-help__text">Ипотека</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="tariffs" class="tariffs">
+			<div class="container">
+				<div class="tariffs__head">
+					<p class="tariffs__title txt-title-2">Мы гарантированно 100% доведем<br> до результата или вернем все деньги по договору</p>
+					<a href="#" target="_blank" class="tariffs__download-price">Скачать полный прайс</a>
+				</div>
+				<ul class="tariffs__list row">
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Подарок<br> от Президента</p>
+							<p class="tariffs__item-desc">
+								Задолженность перед кредиторами: <br>
+								150 тыс. ₽ - 700 тыс. ₽ <br>
+								Имущества нет
+							</p>
+							<p class="tariffs__item-price">50 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Пакет - <br>Социальный</p>
+							<p class="tariffs__item-desc">
+								Задолженность перед кредиторами: 
+								350 тыс ₽ - 1 млн ₽. 
+								Имущества нет
+							</p>
+							<p class="tariffs__item-price">80 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Пакет - <br>Семейный</p>
+							<p class="tariffs__item-desc">
+								Задолженность перед кредиторами: 
+								700 тыс. ₽ - 1.5 млн. ₽ 
+								Имущества нет
+							</p>
+							<p class="tariffs__item-price">119 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Пакет - <br>Купец</p>
+							<p class="tariffs__item-desc">
+								Задолженность перед кредиторами: 1 млн. ₽ - 2 млн. ₽. Защита имущества, защита сделок
+							</p>
+							<p class="tariffs__item-price">149 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Пакет - <br>Смелый</p>
+							<p class="tariffs__item-desc">Задолженность перед кредиторами: 2 млн ₽ - 3.5 млн. ₽ Защита имущества, защита сделок</p>
+							<p class="tariffs__item-price">199 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Пакет - <br>Отважный</p>
+							<p class="tariffs__item-desc">
+								Задолженность перед кредиторами: 3.5 млн. ₽ - <br>
+								5 млн. ₽ Защита имущества, защита сделок
+							</p>
+							<p class="tariffs__item-price">249 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Пакет - <br>Тактик</p>
+							<p class="tariffs__item-desc">
+								Задолженность перед кредиторами: 5 млн. ₽ - 10 млн. ₽ Защита имущества, защита сделок
+							</p>
+							<p class="tariffs__item-price">349 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+					<li class="tariffs__item col-sm-6 col-lg-4 col-xl-3">
+						<div class="tariffs__item-box">
+							<p class="tariffs__item-title">Стратег</p>
+							<p class="tariffs__item-desc">
+								По согласованию. Задолженность перед кредиторами: 10 млн. ₽ Защита имущества, защита сделок, агрессивные кредиторы
+							</p>
+							<p class="tariffs__item-price">50 000 ₽</p>
+							<a href="#modal" class="tariffs__item-button button js-modal-open">Избавиться от долгов</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="result" class="result">
+			<div class="result__container container">
+				<div class="row">
+					<div class="col-lg-6 col-xl-7">
+						<p class="result__title txt-title-2">Получите финансовую свободу, сохраните 90% денег и 100% времени</p>
+						<ul class="result__list row">
+							<li class="result__item col-md-4">
+								<div class="result__icon">
+									<img src="img/passport.svg" alt="">
+								</div>
+								<p class="result__item-text">Вы спокойно сможете выезжать за границу</p>
+							</li>
+							<li class="result__item col-md-4">
+								<div class="result__icon">
+									<img src="img/shield.svg" alt="">
+								</div>
+								<p class="result__item-text">Вашему имуществу ничего не будет угрожать</p>
+							</li>
+							<li class="result__item col-md-4">
+								<div class="result__icon">
+									<img src="img/piggy-bank.svg" alt="">
+								</div>
+								<p class="result__item-text">Все поступления<br> на вашу карту остаются<br> в сохранности без неожиданных списаний</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-xl-5">
+						<form class="form">
+							<p class="form__title">Оставьте заявку на расчет стоимости банкротства</p>
+							<p class="form__desc">и получите образцы всех<br> документов на почту</p>
+							<p class="form__small-text">Мы перезвоним в течение 15 минут</p>
+							<input type="text" class="form__input input" placeholder="Ваше имя">
+							<input type="tel" class="form__input input" placeholder="Телефон">
+							<input type="submit" class="form__button button" value="Рассчитать стоимость банкротства">
+							<div class="form__checkbox-wrap">
+								<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="works" class="works">
+			<div class="container">
+				<div class="works__head-row row">
+					<div class="col-lg-4">
+						<p class="works__title">За 5 лет<br> работы</p>
+					</div>
+					<div class="col-lg-7">
+						<p class="works__desc">списано более  375 миллионов  рублей, выиграно 600 судебных дел</p>
+					</div>
+				</div>
+				<div class="slider">
+					<ul class="works__list">
+						<li class="works__item">
+							<div class="works__item-box">
+								<a href="img/works-item.jpg" class="works__img-box fancybox">
+									<img src="img/works-item.jpg" alt="">
+								</a>
+								<div class="works__item-content">
+									<p>38-летняя женщина в декретном отпуске обратилась за помощью<br> в прохождении процедуры банкротства</p>
+									<p>При наступлении декретного отпуска отчислений перестало хватать на оплату по кредитам </p>
+									<h3>Что было сделано</h3>
+									<p>Проведена процедура банкротства</p>
+									<h3>Результат</h3>
+									<p class="works__item-sum">Списали долг <span>636 373 ₽</span></p>
+									<p class="works__item-bottom-text">В ходе процедуры реализации имущества в конкурсную массу поступило 53 200 ₽</p>
+								</div>
+							</div>
+						</li>
+						<li class="works__item">
+							<div class="works__item-box">
+								<a href="img/works-item.jpg" class="works__img-box fancybox">
+									<img src="img/works-item.jpg" alt="">
+								</a>
+								<div class="works__item-content">
+									<p>38-летняя женщина в декретном отпуске обратилась за помощью<br> в прохождении процедуры банкротства</p>
+									<p>При наступлении декретного отпуска отчислений перестало хватать на оплату по кредитам </p>
+									<h3>Что было сделано</h3>
+									<p>Проведена процедура банкротства</p>
+									<h3>Результат</h3>
+									<p class="works__item-sum">Списали долг <span>636 373 ₽</span></p>
+									<p class="works__item-bottom-text">В ходе процедуры реализации имущества в конкурсную массу поступило 53 200 ₽</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<button class="slider__prev"><i class="fas fa-chevron-left"></i></button>
+					<button class="slider__next"><i class="fas fa-chevron-right"></i></button>
+				</div>
+			</div>
+		</section>
+
+		<section id="steps" class="steps">
+			<div class="container">
+				<p class="steps__title txt-title-1">Избавим Вас от долгов за 5 простых шагов:</p>
+				<ul class="steps__list row">
+					<li class="steps__item col-lg">
+						<div class="steps__item-head">
+							<img src="img/01.png" alt="" class="steps__item-number">
+							<img src="img/steps-icon-1.png" alt="" class="steps__item-icon">
+						</div>
+						<p class="steps__item-text">
+							Подготовка <br>
+							и составление документов для подачи в суд
+						</p>
+					</li>
+					<li class="steps__item col-lg">
+						<div class="steps__item-head">
+							<img src="img/02.png" alt="" class="steps__item-number">
+							<img src="img/steps-icon-2.png" alt="" class="steps__item-icon">
+						</div>
+						<p class="steps__item-text">
+							Уведомление кредиторов о начале процедуры списания долгов
+						</p>
+					</li>
+					<li class="steps__item col-lg">
+						<div class="steps__item-head">
+							<img src="img/03.png" alt="" class="steps__item-number">
+							<img src="img/steps-icon-3.png" alt="" class="steps__item-icon">
+						</div>
+						<p class="steps__item-text">
+							Получаем решение арбитражного суда о начале процедуры списания долгов
+						</p>
+					</li>
+					<li class="steps__item col-lg">
+						<div class="steps__item-head">
+							<img src="img/04.png" alt="" class="steps__item-number">
+							<img src="img/steps-icon-4.png" alt="" class="steps__item-icon">
+						</div>
+						<p class="steps__item-text">
+							Договариваемся <br>
+							с арбитражным управляющим о сохранении имущества
+						</p>
+					</li>
+					<li class="steps__item col-lg">
+						<div class="steps__item-head">
+							<img src="img/05.png" alt="" class="steps__item-number">
+							<img src="img/steps-icon-5.png" alt="" class="steps__item-icon">
+						</div>
+						<p class="steps__item-text">
+							Получаем официальные документы из суда, что ваши долги списаны
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="team" class="team">
+			<div class="container">
+				<p class="team__title txt-title-1">Наша команда</p>
+				<p class="team__desc">У нас в команде 17 разнопрофильных специалистов, которые обеспечивают финансовую свободу и спокойствие нашим клиентам</p>
+				<ul class="team__list row">
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-1.png" alt="">
+							</div>
+							<p class="team__item-title">Виктория Кутилева</p>
+							<p class="team__item-desc">Руководитель<br> юридического отдела</p>
+						</div>
+					</li>
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-2.png" alt="">
+							</div>
+							<p class="team__item-title">Елена Тумасьева</p>
+							<p class="team__item-desc">Юрист по юр.лицам</p>
+						</div>
+					</li>
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-3.png" alt="">
+							</div>
+							<p class="team__item-title">Лаура Оганнисян</p>
+							<p class="team__item-desc">Юрист</p>
+						</div>
+					</li>
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-4.png" alt="">
+							</div>
+							<p class="team__item-title">Каспар Хачиков</p>
+							<p class="team__item-desc">Генеральный директор</p>
+						</div>
+					</li>
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-5.png" alt="">
+							</div>
+							<p class="team__item-title">Юлия Шульга</p>
+							<p class="team__item-desc">Главный бухгалтер</p>
+						</div>
+					</li>
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-6.png" alt="">
+							</div>
+							<p class="team__item-title">Ани Торосян</p>
+							<p class="team__item-desc">Юрист</p>
+						</div>
+					</li>
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-7.png" alt="">
+							</div>
+							<p class="team__item-title">Юлианна Седелецкая</p>
+							<p class="team__item-desc">Юрист</p>
+						</div>
+					</li>
+					<li class="team__item col-6 col-md-3">
+						<div class="team__item-box">
+							<div class="team__img-box">
+								<img src="img/team-8.png" alt="">
+							</div>
+							<p class="team__item-title">Сергей Хачиков</p>
+							<p class="team__item-desc">Исполнительный директор</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="lifehacks">
+			<div class="container">
+				<div class="lifehacks__box">
+					<div class="row">
+						<div class="col-lg-6 col-xl-7">
+							<p class="lifehacks__title txt-title-2">ТОП 10 самых частых ошибок<br> в самостоятельном оформлении банкротства</p>
+							<ul class="lifehacks__list">
+								<li class="lifehacks__item">получите чек лист всех необходимых документов </li>
+								<li class="lifehacks__item">лайфхаки как все сделать правильно и без нервов</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-xl-5">
+							<form class="form">
+								<p class="form__title">Заполните форму</p>
+								<p class="form__desc">и получите pdf  на почту<br> через 5 секунд</p>
+								<input type="text" class="form__input input" placeholder="Ваше имя">
+								<input type="tel" class="form__input input" placeholder="Телефон">
+								<input type="email" class="form__input input" placeholder="E-mail">
+								<input type="submit" class="form__button button" value="Получить полезный pdf ">
+								<div class="form__checkbox-wrap">
+									<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq" class="faq">
+			<div class="container">
+				<p class="faq__title txt-title-2">Частозадаваемые вопросы<br> о банкротстве и ответы на них</p>
+				<ul class="faq__list">
+					<li class="faq__item">
+						<div class="faq__head">
+							<p class="faq__question">Проснувшись однажды утром после беспокойного сна?</p>
+							<span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+						</div>
+						<div class="faq__answer">
+							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__head">
+							<p class="faq__question">Стоило ему приподнять голову, свой коричневый?</p>
+							<span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+						</div>
+						<div class="faq__answer">
+							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__head">
+							<p class="faq__question">Его многочисленные, убого тонкие по сравнению с остальным телом?</p>
+							<span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+						</div>
+						<div class="faq__answer">
+							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__head">
+							<p class="faq__question">Что со мной случилось?</p>
+							<span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+						</div>
+						<div class="faq__answer">
+							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__head">
+							<p class="faq__question">Стоило ему приподнять голову, свой коричневый?</p>
+							<span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+						</div>
+						<div class="faq__answer">
+							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__head">
+							<p class="faq__question">Его многочисленные, убого тонкие по сравнению с остальным телом?</p>
+							<span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+						</div>
+						<div class="faq__answer">
+							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__head">
+							<p class="faq__question">Что со мной случилось?</p>
+							<span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+						</div>
+						<div class="faq__answer">
+							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<p class="reviews__title txt-title-1">Отзывы</p>
+			</div>
+			<div class="reviews__box">
+				<div class="container">
+					<div class="slider">
+						<ul class="reviews__list">
+							<li class="reviews__item">
+								<div class="reviews__item-box">
+									<div class="reviews__article">
+										<p>Мне посоветовали юридическую компанию "БАНКРОТНИК" мои хорошие знакомые, которые уже обращались к ним. Я была учредителем и руководителем компании ООО "Евро-Транс", мы занимались автомобильным бизнесом. Для того чтобы пополнить оборотные средства компании мы получили кредит в банке ПАО "МДМ Банк" в сумме 15 000 000 рублей. В залог оставили недвижимость, которая была в собственности нашей компании. Ровно год мы платили кредит в банк день в день, пока не случился кризис в 2014 году. Банк ни в какую не хотел делать нам реструктуризацию долга и подали в суд и на компанию и на меня, так как я была поручителем по данному кредиту. При том что мы ровно год платили по 370000 в месяц, а брали всего 15 000 000, банк начал требовать с меня сумму почти 24 млн. рублей. Я предлагала им вначале продать залог, а потом уже разницу требовать с меня, но они стояли на своём. После того, как я обратилась к юристам компании</p>
+									</div>
+									<p class="reviews__sum">Списан долг: 23 850 959,51 ₽</p>
+								</div>
+								<div class="reviews__author">
+									<p class="reviews__author-title">Ивашина Виктория Владимировна</p>
+									<p class="reviews__author-desc">Дело № А53-32030/2017.</p>
+								</div>
+							</li>
+							<li class="reviews__item">
+								<div class="reviews__item-box">
+									<div class="reviews__article">
+										<p>Мне посоветовали юридическую компанию "БАНКРОТНИК" мои хорошие знакомые, которые уже обращались к ним. Я была учредителем и руководителем компании ООО "Евро-Транс", мы занимались автомобильным бизнесом. Для того чтобы пополнить оборотные средства компании мы получили кредит в банке ПАО "МДМ Банк" в сумме 15 000 000 рублей. В залог оставили недвижимость, которая была в собственности нашей компании. Ровно год мы платили кредит в банк день в день, пока не случился кризис в 2014 году. Банк ни в какую не хотел делать нам реструктуризацию долга и подали в суд и на компанию и на меня, так как я была поручителем по данному кредиту. При том что мы ровно год платили по 370000 в месяц, а брали всего 15 000 000, банк начал требовать с меня сумму почти 24 млн. рублей. Я предлагала им вначале продать залог, а потом уже разницу требовать с меня, но они стояли на своём. После того, как я обратилась к юристам компании</p>
+									</div>
+									<p class="reviews__sum">Списан долг: 23 850 959,51 ₽</p>
+								</div>
+								<div class="reviews__author">
+									<p class="reviews__author-title">Ивашина Виктория Владимировна</p>
+									<p class="reviews__author-desc">Дело № А53-32030/2017.</p>
+								</div>
+							</li>
+						</ul>
+						<button class="slider__prev"><i class="fas fa-chevron-left"></i></button>
+						<button class="slider__next"><i class="fas fa-chevron-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container">
+				<p class="about__title txt-title-1">О Компании Банкротник</p>
+				<div class="about__row row">
+					<div class="about__col-text col-lg-5">
+						<div class="about__article">
+							<p>Большинство заемщиков долго не решаются на процедуру банкротства, потому что незнающее окружение навязывает свои стереотипы и убеждения.</p>
+							<p>Большая часть тех последствий, о которых вам рассказывают некомпетентные люди никогда не наступит: банкротов не увольняют с работы, не лишают родительских прав и не оставляют без крыши над головой.</p>
+							<p>Перестаньте терзать себя сомнениями и закапываться всё глубже в долги, обратитесь в «Банкротник». Мы честно расскажем о том, как правильно сохранить всё имущество, списать долги и избежать негативных последствий.</p>
+						</div>
+					</div>
+					<div class="about__col-slider col-lg-7">
+						<div class="slider">
+							<ul class="about__list">
+								<li class="about__item">
+									<a href="img/certificate.jpg" class="about__item-box fancybox">
+										<img src="img/certificate.jpg" alt="">
+									</a>
+								</li>
+								<li class="about__item">
+									<a href="img/certificate.jpg" class="about__item-box fancybox">
+										<img src="img/certificate.jpg" alt="">
+									</a>
+								</li>
+							</ul>
+							<button class="slider__prev"><i class="fas fa-chevron-left"></i></button>
+							<button class="slider__next"><i class="fas fa-chevron-right"></i></button>
+						</div>
+					</div>
+				</div>
+				<div id="contacts" class="about__contacts-row row">
+					<div class="col-xl">
+						<p class="about__contacts-title">Главный офис</p>
+						<p class="about__contacts-city">г. Ростов-на-Дону</p>
+						<ul class="about__contacts-list">
+							<li>
+								<span class="about__contacts-icon"><img src="img/pin.svg" alt=""></span>
+								<span>пер. Газетный 47Б, оф. 608</span>
+							</li>
+							<li>
+								<span class="about__contacts-icon"><img src="img/phone.svg" alt=""></span>
+								<span>8-800-550-44-77, +7 (863) 226-17-77</span>
+							</li>
+							<li>
+								<span class="about__contacts-icon"><img src="img/mail.svg" alt=""></span>
+								<span>bankrotnik@bk.ru</span>
+							</li>
+						</ul>
+					</div>
+					<div class="about__col-branches col-xl-auto">
+						<p class="about__contacts-title">Филиалы</p>
+						<div class="aboout__branches-row row">
+							<div class="col-sm-auto">
+								<p class="about__contacts-city">г. Москва</p>
+								<ul class="about__contacts-list">
+									<li>
+										<span class="about__contacts-icon"><img src="img/pin.svg" alt=""></span>
+										<span>123060, ул. Бутырский Вал, 5, оф. 507, м. Белорусская</span>
+									</li>
+									<li>
+										<span class="about__contacts-icon"><img src="img/phone.svg" alt=""></span>
+										<span>+7 (929) 927-37-77, +7 (929) 920-97-37</span>
+									</li>
+									<li>
+										<span class="about__contacts-icon"><img src="img/mail.svg" alt=""></span>
+										<span>bankrotnik@bk.ru</span>
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-auto">
+								<p class="about__contacts-city">г. Краснодар</p>
+								<ul class="about__contacts-list">
+									<li>
+										<span class="about__contacts-icon"><img src="img/pin.svg" alt=""></span>
+										<span>350015, ул. Кузнечная, 4, оф. 901</span>
+									</li>
+									<li>
+										<span class="about__contacts-icon"><img src="img/phone.svg" alt=""></span>
+										<span>8 (928) 425-00-03</span>
+									</li>
+									<li>
+										<span class="about__contacts-icon"><img src="img/mail.svg" alt=""></span>
+										<span>bankrotnik@bk.ru</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__main">
+			<div class="container">
+				<div class="row">
+					<div class="footer__col-logo col-md-5 col-lg-3">
+						<a href="#" class="footer__logo">
+							<img src="img/footer-logo.png" alt="">
+						</a>
+						<p class="footer__title">Центр списания долгов физ. лицам<br> в Ростове-на-Дону, Краснодаре<br> и Москве</p>
+						<ul class="footer__social-list">
+							<li>
+								<a href="#" target="_blank" rel="nofollow">
+									<svg width="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.33333 4.96962C1.33333 2.96131 2.96138 1.33325 4.96969 1.33325H11.0303C13.0386 1.33325 14.6667 2.96131 14.6667 4.96962V11.0302C14.6667 13.0385 13.0386 14.6666 11.0303 14.6666H4.96969C2.96138 14.6666 1.33333 13.0385 1.33333 11.0302V4.96962ZM8 9.8181C9.00418 9.8181 9.81818 9.0041 9.81818 7.99992C9.81818 6.99577 9.00418 6.18174 8 6.18174C6.99584 6.18174 6.18181 6.99577 6.18181 7.99992C6.18181 9.0041 6.99584 9.8181 8 9.8181ZM8 11.0302C9.67357 11.0302 11.0303 9.67349 11.0303 7.99992C11.0303 6.32633 9.67357 4.96962 8 4.96962C6.32641 4.96962 4.96969 6.32633 4.96969 7.99992C4.96969 9.67349 6.32641 11.0302 8 11.0302ZM11.3333 3.75749C11.8354 3.75749 12.2424 4.16451 12.2424 4.66659C12.2424 5.16866 11.8354 5.57568 11.3333 5.57568C10.8313 5.57568 10.4242 5.16866 10.4242 4.66659C10.4242 4.16451 10.8313 3.75749 11.3333 3.75749Z" fill="white"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="nofollow">
+									<svg width="26" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2974 9.44757C14.1167 9.27784 13.9359 9.10815 13.7616 8.93525C13.2967 8.47411 13.2676 8.21473 13.6454 7.66712C14.0521 7.09073 14.4879 6.51431 14.9238 5.93792C14.9501 5.90252 14.9764 5.86724 15.0026 5.83204C15.3823 5.32263 15.7504 4.82867 15.9407 4.20867C16.086 3.80519 15.9697 3.63225 15.5339 3.54581H15.3014H12.7737C12.4832 3.54581 12.3089 3.66109 12.1926 3.94928C12.1209 4.10345 12.0541 4.25761 11.9882 4.40978C11.8938 4.62742 11.8013 4.84093 11.6987 5.04447C11.292 5.85145 10.8561 6.62959 10.217 7.29248C10.1978 7.31149 10.1786 7.33151 10.1592 7.35172C10.0318 7.48479 9.89574 7.62691 9.69395 7.55185C9.40339 7.43656 9.31622 6.97545 9.31622 6.80252V3.89165C9.25811 3.45935 9.17101 3.28642 8.76422 3.19995H6.12026C5.77161 3.19995 5.56823 3.31523 5.39391 3.54581C5.27769 3.68991 5.24863 3.77637 5.48107 3.80519C5.91689 3.89165 6.17837 4.17986 6.23648 4.61216C6.32365 5.30387 6.32365 5.99554 6.26554 6.68724C6.23648 6.88899 6.20742 7.09073 6.12026 7.29248C5.97499 7.58069 5.77161 7.63831 5.51012 7.4654C5.27769 7.29248 5.10336 7.06192 4.92904 6.83134C4.28984 5.93792 3.79591 4.98684 3.38915 3.97811C3.27293 3.68991 3.06955 3.51698 2.74995 3.51698C2.49814 3.51698 2.24634 3.51378 1.99453 3.51059C1.49093 3.50418 0.987315 3.49777 0.483712 3.51698C0.0188404 3.51698 -0.0973868 3.74756 0.0769479 4.15102C0.919526 5.96673 1.84927 7.75359 3.0405 9.36757C3.65064 10.2033 4.377 10.9239 5.27769 11.4426C6.32365 12.0479 7.42771 12.2208 8.61894 12.1631C9.17101 12.1343 9.34528 11.9902 9.37433 11.4426C9.37433 11.0679 9.43245 10.7221 9.60678 10.3763C9.81017 10.0593 10.0717 10.0016 10.3913 10.2033C10.5366 10.3186 10.6818 10.4339 10.798 10.578C10.9087 10.6978 11.0159 10.8175 11.122 10.9361C11.3224 11.1599 11.5188 11.3795 11.7277 11.5867C12.1345 11.9902 12.5994 12.2496 13.2095 12.1919H15.5339C15.9116 12.1631 16.0859 11.702 15.8826 11.2985C15.7373 11.0103 15.5339 10.7509 15.3305 10.4915C15.0206 10.1265 14.659 9.78702 14.2974 9.44757Z" fill="white"/>
+										</g>
+										<defs>
+											<clipPath id="clip0">
+												<rect width="16.64" height="16" fill="white"/>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col-menu-1 col-md-3 col-lg-3">
+						<ul class="menu">
+							<li class="menu-item"><a href="#about" class="js-scroll-link">О нас</a></li>
+							<li class="menu-item"><a href="#whom-help" class="js-scroll-link">Кому помогаем</a></li>
+							<li class="menu-item"><a href="#tariffs" class="js-scroll-link">Тарифы</a></li>
+							<li class="menu-item"><a href="#works" class="js-scroll-link">Наши работы</a></li>
+							<li class="menu-item"><a href="#result" class="js-scroll-link">Результаты работы</a></li>
+						</ul>
+					</div>
+					<div class="footer__col-menu-2 col-md-4 col-lg-2">
+						<ul class="menu">
+							<li class="menu-item"><a href="#steps" class="js-scroll-link">Как мы работаем?</a></li>
+							<li class="menu-item"><a href="#team" class="js-scroll-link">Команда</a></li>
+							<li class="menu-item"><a href="#faq" class="js-scroll-link">Вопрос-ответ</a></li>
+							<li class="menu-item"><a href="#contacts" class="js-scroll-link">Филиалы и контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer__col-info col-lg-4">
+						<ul class="footer__info-list">
+							<li>
+								<span class="footer__info-icon"><img src="img/pin.svg" alt=""></span>
+								<span>Головной офис: г. Ростов-На-Дону<br> пер. Газетный 47 Б офис 212</span>
+							</li>
+							<li>
+								<span class="footer__info-icon">
+									<svg 
+									 xmlns="http://www.w3.org/2000/svg"
+									 xmlns:xlink="http://www.w3.org/1999/xlink"
+									 width="18px" height="18px">
+										<path fill-rule="evenodd"  fill="rgb(237, 27, 35)"
+										 d="M8.879,-0.000 C3.983,-0.000 -0.000,3.983 -0.000,8.879 C-0.000,13.774 3.983,17.758 8.879,17.758 C13.775,17.758 17.758,13.774 17.758,8.879 C17.758,3.983 13.775,-0.000 8.879,-0.000 ZM8.879,16.214 C4.835,16.214 1.544,12.923 1.544,8.879 C1.544,4.834 4.835,1.544 8.879,1.544 C12.924,1.544 16.214,4.834 16.214,8.879 C16.214,12.923 12.924,16.214 8.879,16.214 ZM11.826,10.734 C12.128,11.035 12.128,11.524 11.826,11.826 C11.675,11.976 11.478,12.052 11.280,12.052 C11.083,12.052 10.885,11.976 10.734,11.826 L8.333,9.425 C8.188,9.280 8.107,9.084 8.107,8.879 L8.107,4.277 C8.107,3.851 8.452,3.505 8.879,3.505 C9.305,3.505 9.651,3.851 9.651,4.277 L9.651,8.559 L11.826,10.734 Z"/>
+									</svg>
+								</span>
+								<span>Пн-Сб  9:00-20:00</span>
+							</li>
+							<li>
+								<span class="footer__info-icon"><img src="img/phone.svg" alt=""></span>
+								<span>8-800-550-44-77, +7 (863) 226-17-77</span>
+							</li>
+							<li>
+								<span class="footer__info-icon"><img src="img/mail.svg" alt=""></span>
+								<span>bankrotnik@bk.ru</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<p class="footer__madein">Сделано в <a href="#" target="_blank" rel="nofollow"><img height="22" src="img/sheer.svg" alt=""></a></p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="scroll-top"><span><i class="fas fa-arrow-up"></i></span></div>
+
+	<div class="modal" id="modal">
+		<div class="modal__container">
+			<div class="modal__box">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<form class="form">
+					<p class="form__title">Оставьте заявку</p>
+					<p class="form__desc">и наш менеджер <br> свяжется с Вами</p>
+					<input type="text" class="form__input input" placeholder="Ваше имя">
+					<input type="tel" class="form__input input" placeholder="Телефон">
+					<input type="submit" class="form__button button" value="Оставить заявку">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
+	<script src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-media.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

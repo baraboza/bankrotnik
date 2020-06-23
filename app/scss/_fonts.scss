@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face('Geometria', '../font/Geometria/Geometria-Light', 300);
+@include font-face('Geometria', '../font/Geometria/Geometria', 400);
+@include font-face('Geometria', '../font/Geometria/Geometria-Medium', 500);
+@include font-face('Geometria', '../font/Geometria/Geometria-Bold', 700);
+@include font-face('Geometria', '../font/Geometria/Geometria-ExtraBold', 800);
+@include font-face('Geometria', '../font/Geometria/Geometria-Heavy', 900);

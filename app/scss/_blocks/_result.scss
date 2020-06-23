@@ -1,0 +1,50 @@
+.result {
+	margin-top: 115px;
+	margin-bottom: 128px;
+
+	&__title {
+		margin-top: 60px;
+	}
+
+	&__list {
+		margin-top: 90px;
+	}
+
+	&__item-text {
+		margin-top: 40px;
+		line-height: 22px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.result {
+
+		&__title {
+			margin-top: 0;
+		}
+
+		.form {
+			margin-top: 50px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.result {
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+		&__list {
+			margin-top: 0;
+		}
+
+		&__item {
+			margin-top: 25px;
+			text-align: center;
+		}
+
+		&__item-text {
+			margin-top: 15px;
+		}
+	}
+}

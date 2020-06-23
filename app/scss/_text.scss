@@ -1,0 +1,25 @@
+.txt-title-1 {
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.txt-title-2 {
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 700;
+}
+
+@include media-breakpoint-down(sm) {
+	.txt-title-1 {
+		font-size: 24px;
+		word-wrap: break-word;
+	}
+
+	.txt-title-2 {
+		text-align: center;
+		font-size: 24px;
+		line-height: 30px;
+	}
+}

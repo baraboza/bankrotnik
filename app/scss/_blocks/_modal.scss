@@ -1,0 +1,33 @@
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	background: rgba(0,0,0,0.7);
+	z-index: 10;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100%;
+		padding: 15px;
+	}
+
+	&__box {
+		max-width: 470px;
+		position: relative;
+	}
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: #fff;
+		font-size: 24px;
+		cursor: pointer;
+	}
+}
