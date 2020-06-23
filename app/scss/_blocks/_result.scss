@@ -10,6 +10,20 @@
 		margin-top: 90px;
 	}
 
+	&__item {
+
+		&:hover {
+
+			.result__icon {
+				transform: translate(0, -10px);
+			}
+		}
+	}
+
+	&__icon {
+		transition: transform 0.2s;
+	}
+
 	&__item-text {
 		margin-top: 40px;
 		line-height: 22px;

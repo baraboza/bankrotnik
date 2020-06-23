@@ -104,6 +104,26 @@
 
 			a {
 				@include hover-opacity;
+				position: relative;
+
+				&::before {
+					content: '';
+					position: absolute;
+					bottom: -10px;
+					left: 50%;
+					transform: translate(-50%, 0);
+					height: 2px;
+					background-color: #000;
+					width: 0;
+					transition: width 0.2s;
+				}
+
+				&:hover {
+
+					&::before {
+						width: 100%;
+					}
+				}
 			}
 		}
 	}
@@ -179,6 +199,13 @@
 
 			.menu-item {
 				margin-bottom: 10px;
+
+				a {
+
+					&::before {
+						display: none;	
+					}
+				}
 			}
 		}
 	}
